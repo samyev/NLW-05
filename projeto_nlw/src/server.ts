@@ -1,24 +1,15 @@
 // importando o express pra iniicar o server
 import express from "express";
 
+import "./database";
+import { routes } from "./routes";
+
 // chamando o app / servidor
 const app = express();
 
-// criação de rotas 
+app.use(express.json());
 
-//GET = busca
-app.get("/", (request, response) => {
-  return response.json({
-    message: "Olá NLW #05!!!"
-  });
-});
-
-// POST = Criação
-app.post("/users", (request, response) => {
-  return response.json({
-    message: "Usuário criado com sucesso!"
-  });
-});
+app.use(routes);
 
 // inciando o servidor
 app.listen(3333, () => console.log("Server is running on port 3333"))
