@@ -27,7 +27,7 @@ Aquitetura do projeto:
 yarn add ts-node-dev -D
 ~~~
 
-2. Inicializar e rodar a aplicação.
+2. Inicializar e rodar a aplicação, é preciso entrar na pasta **projeto_nlw** e depois rodar o comando a baixo.
 
 ~~~nodejs
 yarn dev
